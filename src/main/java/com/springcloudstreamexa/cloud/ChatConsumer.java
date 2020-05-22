@@ -9,10 +9,11 @@ public class ChatConsumer {
     @Autowired
     ChatCore chatCore;
     @StreamListener( ChatStream.INPUT_CHAT)
- public void    listenChatData(String chatData )
+ public void    listenData(String chatData )
     {
        chatCore.processShowChatData(chatData);
     }
+
 
 
 }

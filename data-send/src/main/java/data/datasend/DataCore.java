@@ -13,6 +13,11 @@ public class DataCore {
 
         return data;
     }
+    public String processShowChatData(String data)
+    {
+
+        return data;
+    }
     public void sendData()
     {
         producer.publishData("datasend");

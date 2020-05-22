@@ -13,6 +13,12 @@ public class DataConsumer {
     {
        dataCore.processShowData( Data);
     }
+     
 
+    @StreamListener( DataStream.INPUT_DATAFROMCHAT)
+    public void    listenChatData(String chatData )
+    {
+        dataCore.processShowChatData(chatData);
+    }
 
 }
